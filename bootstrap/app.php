@@ -19,6 +19,7 @@ require_once __DIR__ . '/services.php';
 
 require_once __DIR__ . '/middleware.php';
 require_once __DIR__ . '/errors.php';
+require_once __DIR__ . '/cors.php';
 
 require_once __DIR__ . '/../routes/api.php';
 require_once __DIR__ . '/../routes/web.php';
