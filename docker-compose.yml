@@ -1,0 +1,17 @@
+version: "3"
+services:
+  php:
+    build: .docker
+    container_name: phpserver
+    image: phpserver
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 80:80
+    restart: always
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
